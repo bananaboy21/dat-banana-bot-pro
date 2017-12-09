@@ -2,7 +2,7 @@ import discord
 import os
 import io
 from discord.ext import commands
-bot = commands.Bot(command_prefix='*',description="dat banana bot, made by dat banana boi#1982.".\n\nHelp Commands",owner_id=277981712989028353)
+bot = commands.Bot(command_prefix='*',description="dat banana bot, made by dat banana boi#1982.\n\nHelp Commands",owner_id=277981712989028353)
 
 
 @bot.event
