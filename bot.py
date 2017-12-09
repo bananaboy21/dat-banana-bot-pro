@@ -11,7 +11,7 @@ async def on_ready():
    
    
 @bot.command()
-async def ping(ctx)
+async def ping(ctx):
     """Need ping pong? Get a websocket latency."""
     em = discord.Embed(color=discord.Color(value=0x00ff00))
     em.title = 'PoIIIIng! That was a whopping:"
