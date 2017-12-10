@@ -36,13 +36,7 @@ async def textface(ctx, Type):
           await ctx.send('That is NOT a textface! Usage: *textface [lenny/tableflip/shrug]')
             
             
-@bot.command()
-async def say(ctx, *, message: str):
-    '''Yea, yea. I'll say what you say.'''
-    await ctx.message.delete()
-    await ctx.send(message)  
-      
-      
+
 @bot.command()
 async def invite(ctx):
     """Lemme in your server, mate. From here."""
