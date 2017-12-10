@@ -18,6 +18,22 @@ async def ping(ctx):
     em.description = f'{bot.ws.latency * 1000:.4f} ms'
     await ctx.send(embed=em)
     
+   
+
+@bot.command()
+async def textface(ctx, Type):
+    """Get that lenny, tableflip or shrug face in here!"""
+    if Type is None:
+        await ctx.send('That is NOT a textface! Usage: *textface [lenny/tableflip/shrug]')
+    else:
+        if Type.lower() == 'lenny':
+          await ctx.send('( ° ʖ °)')
+        elif Type.lower() == 'tableflip':
+          await ctx.send('(ノಠ益ಠ)ノ彡┻━┻')
+        elif Type.lower() == 'shrug':
+          await ctx.send('¯\_(ツ)_/¯')
+        else:
+          await ctx.send('That is NOT a textface! Usage: *textface [lenny/tableflip/shrug]')
     
 
 if not os.environ.get('TOKEN'):
