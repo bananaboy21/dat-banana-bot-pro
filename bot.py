@@ -34,6 +34,25 @@ async def textface(ctx, Type):
           await ctx.send('¯\_(ツ)_/¯')
         else:
           await ctx.send('That is NOT a textface! Usage: *textface [lenny/tableflip/shrug]')
+            
+            
+@bot.command()
+async def say(ctx, *, message: str):
+    '''Yea, yea. I'll say what you say.'''
+    await ctx.message.delete()
+    await ctx.send(message)  
+      
+      
+@bot.command()
+async def invite(ctx):
+    """Lemme in your server, mate. From here."""
+    await ctx.send("Allow me to join the hood: https://discordapp.com/oauth2/authorize?client_id=389184269643153409&scope=bot&permissions=8 ")        
+
+ 
+@bot.command()
+async def discord(ctx):
+    """Join our Discord server!"""
+    await ctx.send("Your turn to enter the hood. https://discord.gg/wvkVknA")
     
 
 if not os.environ.get('TOKEN'):
