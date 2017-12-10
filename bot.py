@@ -7,14 +7,14 @@ bot = commands.Bot(command_prefix='*',description="dat banana bot, made by dat b
 
 @bot.event
 async def on_ready():
-   print('Bot is online!')
+   print('Bot is online and READY TO ROLL!')
    
    
 @bot.command()
 async def ping(ctx):
     """Need ping pong? Get a websocket latency."""
     em = discord.Embed(color=discord.Color(value=0x00ff00))
-    em.title = 'PoIIIIng! That was a whopping:"
+    em.title = 'PoIIIIng! That was a whopping:'
     em.description = f'{bot.ws.latency * 1000:.4f} ms'
     await ctx.send(embed=em)
     
